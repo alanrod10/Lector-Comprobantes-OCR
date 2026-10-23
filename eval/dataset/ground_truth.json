@@ -1,0 +1,737 @@
+[
+  {
+    "archivo": "comprobante_001.jpg",
+    "notas": [
+      "sombra",
+      "desenfocado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-10-16",
+      "proveedor_razon_social": "DISTRIBUIDORA DEL NORTE S.R.L.",
+      "proveedor_cuit": "30710011229",
+      "tipo_comprobante": "Factura",
+      "letra": "A",
+      "punto_venta": "0002",
+      "numero_comprobante": "00010137",
+      "importe_neto_gravado": "1925.00",
+      "iva": [
+        {
+          "alicuota": "21",
+          "importe": "404.25"
+        }
+      ],
+      "otros_impuestos": [],
+      "importe_total": "2329.25",
+      "moneda": "ARS",
+      "cae": "74000189104501"
+    }
+  },
+  {
+    "archivo": "comprobante_002.jpg",
+    "notas": [
+      "arrugado",
+      "sombra"
+    ],
+    "campos": {
+      "fecha_emision": "2026-10-14",
+      "proveedor_razon_social": "FERRETERIA INDUSTRIAL SAN MARTIN S.A.",
+      "proveedor_cuit": "30611122248",
+      "tipo_comprobante": "Factura",
+      "letra": "A",
+      "punto_venta": "0003",
+      "numero_comprobante": "00010274",
+      "importe_neto_gravado": "2350.00",
+      "iva": [
+        {
+          "alicuota": "21",
+          "importe": "493.50"
+        }
+      ],
+      "otros_impuestos": [],
+      "importe_total": "2843.50",
+      "moneda": "ARS",
+      "cae": "74000289104502"
+    }
+  },
+  {
+    "archivo": "comprobante_003.jpg",
+    "notas": [
+      "arrugado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-10-12",
+      "proveedor_razon_social": "MAYORISTA ALIMENTICIO JUJUY S.A.",
+      "proveedor_cuit": "30500012346",
+      "tipo_comprobante": "Factura",
+      "letra": "A",
+      "punto_venta": "0004",
+      "numero_comprobante": "00010411",
+      "importe_neto_gravado": "2775.00",
+      "iva": [
+        {
+          "alicuota": "10.5",
+          "importe": "291.38"
+        }
+      ],
+      "otros_impuestos": [],
+      "importe_total": "3066.38",
+      "moneda": "ARS",
+      "cae": "74000389104503"
+    }
+  },
+  {
+    "archivo": "comprobante_004.jpg",
+    "notas": [
+      "arrugado",
+      "sombra",
+      "inclinado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-10-10",
+      "proveedor_razon_social": "PANIFICADORA CENTRAL S.R.L.",
+      "proveedor_cuit": "30711223343",
+      "tipo_comprobante": "Factura",
+      "letra": "A",
+      "punto_venta": "0005",
+      "numero_comprobante": "00010548",
+      "importe_neto_gravado": "3200.00",
+      "iva": [
+        {
+          "alicuota": "21",
+          "importe": "672.00"
+        }
+      ],
+      "otros_impuestos": [
+        {
+          "descripcion": "Percepcion IIBB",
+          "importe": "96.00"
+        }
+      ],
+      "importe_total": "3968.00",
+      "moneda": "ARS",
+      "cae": "74000489104504"
+    }
+  },
+  {
+    "archivo": "comprobante_005.jpg",
+    "notas": [
+      "arrugado",
+      "inclinado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-10-08",
+      "proveedor_razon_social": "SUPERMERCADO EL SOL S.A.",
+      "proveedor_cuit": "30588899914",
+      "tipo_comprobante": "Factura",
+      "letra": "A",
+      "punto_venta": "0006",
+      "numero_comprobante": "00010685",
+      "importe_neto_gravado": "3625.00",
+      "iva": [
+        {
+          "alicuota": "21",
+          "importe": "761.25"
+        }
+      ],
+      "otros_impuestos": [],
+      "importe_total": "4386.25",
+      "moneda": "ARS",
+      "cae": "74000589104505"
+    }
+  },
+  {
+    "archivo": "comprobante_006.jpg",
+    "notas": [
+      "sombra",
+      "inclinado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-10-06",
+      "proveedor_razon_social": "PAPELERA DEL NOA S.A.",
+      "proveedor_cuit": "30709988774",
+      "tipo_comprobante": "Factura",
+      "letra": "A",
+      "punto_venta": "0007",
+      "numero_comprobante": "00010822",
+      "importe_neto_gravado": "4050.00",
+      "iva": [
+        {
+          "alicuota": "10.5",
+          "importe": "425.25"
+        }
+      ],
+      "otros_impuestos": [],
+      "importe_total": "4475.25",
+      "moneda": "ARS",
+      "cae": "74000689104506"
+    }
+  },
+  {
+    "archivo": "comprobante_007.jpg",
+    "notas": [
+      "sombra",
+      "inclinado",
+      "desenfocado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-10-04",
+      "proveedor_razon_social": "SERVICIOS GRAFICOS ANDINOS",
+      "proveedor_cuit": "20312233445",
+      "tipo_comprobante": "Factura",
+      "letra": "A",
+      "punto_venta": "0008",
+      "numero_comprobante": "00010959",
+      "importe_neto_gravado": "4475.00",
+      "iva": [
+        {
+          "alicuota": "21",
+          "importe": "939.75"
+        }
+      ],
+      "otros_impuestos": [],
+      "importe_total": "5414.75",
+      "moneda": "ARS",
+      "cae": "74000789104507"
+    }
+  },
+  {
+    "archivo": "comprobante_008.jpg",
+    "notas": [
+      "sombra"
+    ],
+    "campos": {
+      "fecha_emision": "2026-10-02",
+      "proveedor_razon_social": "CORRALON EL PUENTE S.A.",
+      "proveedor_cuit": "30712345671",
+      "tipo_comprobante": "Factura",
+      "letra": "A",
+      "punto_venta": "0009",
+      "numero_comprobante": "00011096",
+      "importe_neto_gravado": "4900.00",
+      "iva": [
+        {
+          "alicuota": "21",
+          "importe": "1029.00"
+        }
+      ],
+      "otros_impuestos": [
+        {
+          "descripcion": "Percepcion IIBB",
+          "importe": "147.00"
+        }
+      ],
+      "importe_total": "6076.00",
+      "moneda": "ARS",
+      "cae": "74000889104508"
+    }
+  },
+  {
+    "archivo": "comprobante_009.jpg",
+    "notas": [
+      "sombra",
+      "inclinado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-09-30",
+      "proveedor_razon_social": "LACTEOS DEL VALLE S.R.L.",
+      "proveedor_cuit": "30701122336",
+      "tipo_comprobante": "Factura",
+      "letra": "A",
+      "punto_venta": "0001",
+      "numero_comprobante": "00011233",
+      "importe_neto_gravado": "5325.00",
+      "iva": [
+        {
+          "alicuota": "10.5",
+          "importe": "559.12"
+        }
+      ],
+      "otros_impuestos": [],
+      "importe_total": "5884.12",
+      "moneda": "ARS",
+      "cae": "74000989104509"
+    }
+  },
+  {
+    "archivo": "comprobante_010.jpg",
+    "notas": [
+      "sombra",
+      "desenfocado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-09-28",
+      "proveedor_razon_social": "INSUMOS GASTRONOMICOS SUR S.A.S.",
+      "proveedor_cuit": "30715566776",
+      "tipo_comprobante": "Factura",
+      "letra": "A",
+      "punto_venta": "0002",
+      "numero_comprobante": "00011370",
+      "importe_neto_gravado": "5750.00",
+      "iva": [
+        {
+          "alicuota": "21",
+          "importe": "1207.50"
+        }
+      ],
+      "otros_impuestos": [],
+      "importe_total": "6957.50",
+      "moneda": "ARS",
+      "cae": "74001089104510"
+    }
+  },
+  {
+    "archivo": "comprobante_011.jpg",
+    "notas": [
+      "sombra"
+    ],
+    "campos": {
+      "fecha_emision": "2026-09-26",
+      "proveedor_razon_social": "FARMACIA AVENIDA S.C.S.",
+      "proveedor_cuit": "30688877713",
+      "tipo_comprobante": "Factura",
+      "letra": "A",
+      "punto_venta": "0003",
+      "numero_comprobante": "00011507",
+      "importe_neto_gravado": "6175.00",
+      "iva": [
+        {
+          "alicuota": "21",
+          "importe": "1296.75"
+        }
+      ],
+      "otros_impuestos": [],
+      "importe_total": "7471.75",
+      "moneda": "ARS",
+      "cae": "74001189104511"
+    }
+  },
+  {
+    "archivo": "comprobante_012.jpg",
+    "notas": [
+      "buena_calidad"
+    ],
+    "campos": {
+      "fecha_emision": "2026-09-24",
+      "proveedor_razon_social": "LIBRERIA COMERCIAL BELGRANO",
+      "proveedor_cuit": "27298877665",
+      "tipo_comprobante": "Factura",
+      "letra": "A",
+      "punto_venta": "0004",
+      "numero_comprobante": "00011644",
+      "importe_neto_gravado": "6600.00",
+      "iva": [
+        {
+          "alicuota": "10.5",
+          "importe": "693.00"
+        }
+      ],
+      "otros_impuestos": [
+        {
+          "descripcion": "Percepcion IIBB",
+          "importe": "198.00"
+        }
+      ],
+      "importe_total": "7491.00",
+      "moneda": "ARS",
+      "cae": "74001289104512"
+    }
+  },
+  {
+    "archivo": "comprobante_013.jpg",
+    "notas": [
+      "arrugado",
+      "sombra",
+      "inclinado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-09-22",
+      "proveedor_razon_social": "DISTRIBUIDORA DEL NORTE S.R.L.",
+      "proveedor_cuit": "30710011229",
+      "tipo_comprobante": "Factura",
+      "letra": "B",
+      "punto_venta": "0005",
+      "numero_comprobante": "00011781",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "7025.00",
+      "moneda": "ARS",
+      "cae": "74001389104513"
+    }
+  },
+  {
+    "archivo": "comprobante_014.jpg",
+    "notas": [
+      "inclinado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-09-20",
+      "proveedor_razon_social": "FERRETERIA INDUSTRIAL SAN MARTIN S.A.",
+      "proveedor_cuit": "30611122248",
+      "tipo_comprobante": "Factura",
+      "letra": "B",
+      "punto_venta": "0006",
+      "numero_comprobante": "00011918",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "7450.00",
+      "moneda": "ARS",
+      "cae": "74001489104514"
+    }
+  },
+  {
+    "archivo": "comprobante_015.jpg",
+    "notas": [
+      "arrugado",
+      "desenfocado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-09-18",
+      "proveedor_razon_social": "MAYORISTA ALIMENTICIO JUJUY S.A.",
+      "proveedor_cuit": "30500012346",
+      "tipo_comprobante": "Factura",
+      "letra": "B",
+      "punto_venta": "0007",
+      "numero_comprobante": "00012055",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "7875.00",
+      "moneda": "ARS",
+      "cae": "74001589104515"
+    }
+  },
+  {
+    "archivo": "comprobante_016.jpg",
+    "notas": [
+      "inclinado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-09-16",
+      "proveedor_razon_social": "PANIFICADORA CENTRAL S.R.L.",
+      "proveedor_cuit": "30711223343",
+      "tipo_comprobante": "Factura",
+      "letra": "B",
+      "punto_venta": "0008",
+      "numero_comprobante": "00012192",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "8300.00",
+      "moneda": "ARS",
+      "cae": "74001689104516"
+    }
+  },
+  {
+    "archivo": "comprobante_017.jpg",
+    "notas": [
+      "sombra"
+    ],
+    "campos": {
+      "fecha_emision": "2026-09-14",
+      "proveedor_razon_social": "SUPERMERCADO EL SOL S.A.",
+      "proveedor_cuit": "30588899914",
+      "tipo_comprobante": "Factura",
+      "letra": "B",
+      "punto_venta": "0009",
+      "numero_comprobante": "00012329",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "8725.00",
+      "moneda": "ARS",
+      "cae": "74001789104517"
+    }
+  },
+  {
+    "archivo": "comprobante_018.jpg",
+    "notas": [
+      "arrugado",
+      "inclinado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-09-12",
+      "proveedor_razon_social": "PAPELERA DEL NOA S.A.",
+      "proveedor_cuit": "30709988774",
+      "tipo_comprobante": "Factura",
+      "letra": "B",
+      "punto_venta": "0001",
+      "numero_comprobante": "00012466",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "9150.00",
+      "moneda": "ARS",
+      "cae": "74001889104518"
+    }
+  },
+  {
+    "archivo": "comprobante_019.jpg",
+    "notas": [
+      "sombra"
+    ],
+    "campos": {
+      "fecha_emision": "2026-09-10",
+      "proveedor_razon_social": "SERVICIOS GRAFICOS ANDINOS",
+      "proveedor_cuit": "20312233445",
+      "tipo_comprobante": "Factura",
+      "letra": "B",
+      "punto_venta": "0002",
+      "numero_comprobante": "00012603",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "9575.00",
+      "moneda": "ARS",
+      "cae": "74001989104519"
+    }
+  },
+  {
+    "archivo": "comprobante_020.jpg",
+    "notas": [
+      "sombra",
+      "inclinado",
+      "desenfocado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-09-08",
+      "proveedor_razon_social": "CORRALON EL PUENTE S.A.",
+      "proveedor_cuit": "30712345671",
+      "tipo_comprobante": "Factura",
+      "letra": "B",
+      "punto_venta": "0003",
+      "numero_comprobante": "00012740",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "10000.00",
+      "moneda": "ARS",
+      "cae": "74002089104520"
+    }
+  },
+  {
+    "archivo": "comprobante_021.jpg",
+    "notas": [
+      "sombra",
+      "inclinado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-09-06",
+      "proveedor_razon_social": "LACTEOS DEL VALLE S.R.L.",
+      "proveedor_cuit": "30701122336",
+      "tipo_comprobante": "Factura",
+      "letra": "C",
+      "punto_venta": "0004",
+      "numero_comprobante": "00012877",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "10425.00",
+      "moneda": "ARS",
+      "cae": "74002189104521"
+    }
+  },
+  {
+    "archivo": "comprobante_022.jpg",
+    "notas": [
+      "arrugado",
+      "inclinado",
+      "desenfocado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-09-04",
+      "proveedor_razon_social": "INSUMOS GASTRONOMICOS SUR S.A.S.",
+      "proveedor_cuit": "30715566776",
+      "tipo_comprobante": "Factura",
+      "letra": "C",
+      "punto_venta": "0005",
+      "numero_comprobante": "00013014",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "10850.00",
+      "moneda": "ARS",
+      "cae": "74002289104522"
+    }
+  },
+  {
+    "archivo": "comprobante_023.jpg",
+    "notas": [
+      "sombra",
+      "inclinado",
+      "desenfocado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-09-02",
+      "proveedor_razon_social": "FARMACIA AVENIDA S.C.S.",
+      "proveedor_cuit": "30688877713",
+      "tipo_comprobante": "Factura",
+      "letra": "C",
+      "punto_venta": "0006",
+      "numero_comprobante": "00013151",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "11275.00",
+      "moneda": "ARS",
+      "cae": "74002389104523"
+    }
+  },
+  {
+    "archivo": "comprobante_024.jpg",
+    "notas": [
+      "arrugado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-08-31",
+      "proveedor_razon_social": "LIBRERIA COMERCIAL BELGRANO",
+      "proveedor_cuit": "27298877665",
+      "tipo_comprobante": "Factura",
+      "letra": "C",
+      "punto_venta": "0007",
+      "numero_comprobante": "00013288",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "11700.00",
+      "moneda": "ARS",
+      "cae": "74002489104524"
+    }
+  },
+  {
+    "archivo": "comprobante_025.jpg",
+    "notas": [
+      "sombra",
+      "desenfocado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-08-29",
+      "proveedor_razon_social": "DISTRIBUIDORA DEL NORTE S.R.L.",
+      "proveedor_cuit": "30710011229",
+      "tipo_comprobante": "Factura",
+      "letra": "C",
+      "punto_venta": "0008",
+      "numero_comprobante": "00013425",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "12125.00",
+      "moneda": "ARS",
+      "cae": "74002589104525"
+    }
+  },
+  {
+    "archivo": "comprobante_026.jpg",
+    "notas": [
+      "termico"
+    ],
+    "campos": {
+      "fecha_emision": "2026-08-27",
+      "proveedor_razon_social": "FERRETERIA INDUSTRIAL SAN MARTIN S.A.",
+      "proveedor_cuit": "30611122248",
+      "tipo_comprobante": "Ticket",
+      "letra": "B",
+      "punto_venta": "0009",
+      "numero_comprobante": "00013562",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "12550.00",
+      "moneda": "ARS",
+      "cae": "74002689104526"
+    }
+  },
+  {
+    "archivo": "comprobante_027.jpg",
+    "notas": [
+      "termico",
+      "arrugado",
+      "sombra",
+      "inclinado",
+      "desenfocado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-08-25",
+      "proveedor_razon_social": "MAYORISTA ALIMENTICIO JUJUY S.A.",
+      "proveedor_cuit": "30500012346",
+      "tipo_comprobante": "Ticket",
+      "letra": "B",
+      "punto_venta": "0001",
+      "numero_comprobante": "00013699",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "12975.00",
+      "moneda": "ARS",
+      "cae": null
+    }
+  },
+  {
+    "archivo": "comprobante_028.jpg",
+    "notas": [
+      "termico",
+      "arrugado",
+      "sombra"
+    ],
+    "campos": {
+      "fecha_emision": "2026-08-23",
+      "proveedor_razon_social": "PANIFICADORA CENTRAL S.R.L.",
+      "proveedor_cuit": "30711223343",
+      "tipo_comprobante": "Ticket",
+      "letra": "B",
+      "punto_venta": "0002",
+      "numero_comprobante": "00013836",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "13400.00",
+      "moneda": "ARS",
+      "cae": "74002889104528"
+    }
+  },
+  {
+    "archivo": "comprobante_029.jpg",
+    "notas": [
+      "termico"
+    ],
+    "campos": {
+      "fecha_emision": "2026-08-21",
+      "proveedor_razon_social": "SUPERMERCADO EL SOL S.A.",
+      "proveedor_cuit": "30588899914",
+      "tipo_comprobante": "Ticket",
+      "letra": "B",
+      "punto_venta": "0003",
+      "numero_comprobante": "00013973",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "13825.00",
+      "moneda": "ARS",
+      "cae": null
+    }
+  },
+  {
+    "archivo": "comprobante_030.jpg",
+    "notas": [
+      "termico",
+      "arrugado",
+      "inclinado"
+    ],
+    "campos": {
+      "fecha_emision": "2026-08-19",
+      "proveedor_razon_social": "PAPELERA DEL NOA S.A.",
+      "proveedor_cuit": "30709988774",
+      "tipo_comprobante": "Ticket",
+      "letra": "B",
+      "punto_venta": "0004",
+      "numero_comprobante": "00014110",
+      "importe_neto_gravado": null,
+      "iva": [],
+      "otros_impuestos": [],
+      "importe_total": "14250.00",
+      "moneda": "ARS",
+      "cae": "74003089104530"
+    }
+  }
+]

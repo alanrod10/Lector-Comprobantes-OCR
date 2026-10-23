@@ -1,0 +1,14 @@
+imagen,campo,esperado,obtenido,texto_origen,metodo,tipo_discrepancia
+comprobante_002.jpg,tipo_comprobante,FACTURA,null,,reglas,omision
+comprobante_002.jpg,letra,A,null,,reglas,omision
+comprobante_005.jpg,proveedor_cuit,30588899914,null,,reglas,omision
+comprobante_014.jpg,letra,B,null,,reglas,omision
+comprobante_016.jpg,letra,B,null,,reglas,omision
+comprobante_019.jpg,letra,B,null,,reglas,omision
+comprobante_020.jpg,tipo_comprobante,FACTURA,null,,reglas,omision
+comprobante_020.jpg,letra,B,null,,reglas,omision
+comprobante_022.jpg,letra,C,null,,reglas,omision
+comprobante_027.jpg,letra,B,null,,reglas,omision
+comprobante_028.jpg,letra,B,null,,reglas,omision
+comprobante_029.jpg,proveedor_cuit,30588899914,null,,reglas,omision
+comprobante_029.jpg,letra,B,null,,reglas,omision
