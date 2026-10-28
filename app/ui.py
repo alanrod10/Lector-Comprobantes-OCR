@@ -516,10 +516,10 @@ def render_tab_escanear(storage: StorageManager) -> None:
             res_actual.comprobante = comp_editado
             res_actual.estado = "confirmado"
             res_actual = ejecutar_validaciones(
-                res_actual,
-                historial_existente=storage.listar_claves_historial(),
-                umbral_p2=umbral_p2,
-            )
+            res_actual,
+            historial_existente=storage.listar_claves_historial(),
+            umbral_confianza_p2=umbral_p2,
+        )
             ext_img = (
                 st.session_state.get("scan_filename", "jpg").rsplit(".", 1)[-1]
                 if "." in st.session_state.get("scan_filename", "")
@@ -655,10 +655,10 @@ def render_tab_historial(storage: StorageManager) -> None:
                 reg_sel.comprobante = comp_edit
                 reg_sel.estado = "confirmado"
                 reg_sel = ejecutar_validaciones(
-                    reg_sel,
-                    historial_existente=storage.listar_claves_historial(),
-                    umbral_p2=umbral_p2,
-                )
+                reg_sel,
+                historial_existente=storage.listar_claves_historial(),
+                umbral_confianza_p2=umbral_p2,
+            )
                 storage.guardar_resultado(
                     reg_sel, comprobante_original_extraido=comp_antes
                 )
