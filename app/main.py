@@ -39,7 +39,25 @@ def main() -> None:
 
     storage = StorageManager()
 
-    st.title("🧾 Lector de Comprobantes")
+
+    st.markdown(
+        """
+        <div class="hero-header">
+            <span class="hero-kicker">LECTOR INTELIGENTE · OCR</span>
+            <div class="hero-title">
+                Lector Inteligente<br>de Comprobantes
+            </div>
+            <p class="hero-description">
+                Transformá facturas, tickets y otros comprobantes en datos
+                estructurados que podés revisar, corregir y exportar.
+                <span class="hero-accent">
+                    OCR, validación y revisión manual en un solo lugar.
+                </span>
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
     # Mostrar una vez por sesión el aviso sobre comprobantes ficticios o autorizados y envío de datos LLM
     if not st.session_state.get("aviso_sesion_mostrado", False):
