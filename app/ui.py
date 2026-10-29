@@ -59,49 +59,410 @@ ETIQUETAS_CAMPOS: Dict[str, str] = {
     "otros_impuestos": "Otros impuestos y percepciones",
 }
 
+
 MOBILE_CSS = """
 <style>
-/* Diseño mobile-first: botones de ancho completo, alto táctil >= 48px, inputs >= 16px (evita zoom en iOS) */
-.block-container {
-    padding-top: 1.2rem !important;
-    padding-bottom: 3rem !important;
-    max-width: 720px !important;
+:root {
+    color-scheme: light;
 }
+
+/* =========================================================
+   1. IDENTIDAD GLOBAL
+   Azul noche -> azul profundo -> azul cobalto
+   ========================================================= */
+
+.stApp {
+    background: #F3F6FC;
+    color: #12233F;
+}
+
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+[data-testid="stMainBlockContainer"],
+.block-container {
+    max-width: 1120px !important;
+    padding-top: 2rem !important;
+    padding-bottom: 3rem !important;
+    padding-left: clamp(1rem, 3vw, 2.5rem) !important;
+    padding-right: clamp(1rem, 3vw, 2.5rem) !important;
+}
+
+/* =========================================================
+   2. JERARQUÍA TIPOGRÁFICA
+   ========================================================= */
+
+h1, h2, h3 {
+    color: #081A33 !important;
+    letter-spacing: -0.025em !important;
+}
+
+h1 {
+    font-weight: 750 !important;
+    line-height: 1.15 !important;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 84px;
+    height: 5px;
+    margin-top: 0.7rem;
+    border-radius: 999px;
+    background: linear-gradient(
+        100deg,
+        #081A33 0%,
+        #123E7C 45%,
+        #155EEF 78%,
+        #2F80ED 100%
+    );
+}
+
+h2, h3 {
+    font-weight: 700 !important;
+}
+
+[data-testid="stCaptionContainer"] {
+    color: #64748B !important;
+}
+
+label, [data-testid="stWidgetLabel"] p {
+    color: #253B59 !important;
+    font-weight: 600 !important;
+}
+
+/* =========================================================
+   3. NAVEGACIÓN PRINCIPAL
+   ========================================================= */
+
+[data-testid="stTabs"] {
+    margin-top: 1.25rem;
+}
+
+[data-testid="stTabs"] [data-baseweb="tab-list"] {
+    display: flex;
+    gap: 5px;
+    padding: 6px;
+    border: 1px solid #244B7C;
+    border-radius: 14px;
+    background: linear-gradient(
+        120deg,
+        #081A33 0%,
+        #123E7C 55%,
+        #155EEF 100%
+    );
+    box-shadow: 0 8px 22px rgba(8, 26, 51, 0.14);
+}
+
+[data-testid="stTabs"] button[role="tab"] {
+    min-height: 44px;
+    padding: 0.65rem 1rem;
+    border: 1px solid transparent !important;
+    border-radius: 9px;
+    background: transparent;
+    color: #DCE8F8 !important;
+    font-weight: 600;
+    transition:
+        background-color 160ms ease,
+        color 160ms ease,
+        box-shadow 160ms ease;
+}
+
+[data-testid="stTabs"] button[role="tab"] p {
+    color: inherit !important;
+    font-weight: inherit !important;
+}
+
+[data-testid="stTabs"] button[role="tab"]:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #FFFFFF !important;
+}
+
+[data-testid="stTabs"] button[role="tab"][aria-selected="true"] {
+    background: #FFFFFF !important;
+    color: #123E7C !important;
+    border-color: #FFFFFF !important;
+    box-shadow: 0 2px 8px rgba(8, 26, 51, 0.18);
+}
+
+[data-testid="stTabs"] button[role="tab"][aria-selected="true"] p {
+    color: #123E7C !important;
+}
+
+/* Indicador de pestaña: acento eléctrico */
+[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
+    background-color: #2F80ED !important;
+}
+
+/* =========================================================
+   4. TARJETAS, FORMULARIOS Y CONTENEDORES
+   ========================================================= */
+
+[data-testid="stVerticalBlockBorderWrapper"],
+[data-testid="stForm"],
+[data-testid="stExpander"] {
+    border-color: #D8E2F0 !important;
+    border-radius: 14px !important;
+}
+
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px rgba(15, 39, 75, 0.035);
+}
+
+[data-testid="stForm"] {
+    padding: 1rem;
+    background: #FFFFFF;
+}
+
+[data-testid="stExpander"] {
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+[data-testid="stExpander"] summary {
+    color: #18385E;
+    font-weight: 600;
+}
+
+/* =========================================================
+   5. CAMPOS DE ENTRADA Y SELECTORES
+   ========================================================= */
+
+input,
+textarea,
+select,
+div[data-baseweb="input"] input,
+div[data-baseweb="select"] input {
+    color: #12233F !important;
+    font-size: 16px !important;
+}
+
+div[data-baseweb="input"] > div,
+div[data-baseweb="textarea"] > div,
+div[data-baseweb="select"] > div {
+    min-height: 44px;
+    border-color: #C9D6E8 !important;
+    border-radius: 10px !important;
+    background: #FFFFFF !important;
+    transition:
+        border-color 150ms ease,
+        box-shadow 150ms ease;
+}
+
+div[data-baseweb="input"] > div:hover,
+div[data-baseweb="textarea"] > div:hover,
+div[data-baseweb="select"] > div:hover {
+    border-color: #7FA9F4 !important;
+}
+
+div[data-baseweb="input"] > div:focus-within,
+div[data-baseweb="textarea"] > div:focus-within,
+div[data-baseweb="select"] > div:focus-within {
+    border-color: #2F80ED !important;
+    box-shadow: 0 0 0 3px rgba(47, 128, 237, 0.16) !important;
+}
+
+/* =========================================================
+   6. BOTONES
+   ========================================================= */
+
 div.stButton > button,
 div.stDownloadButton > button,
 div[data-testid="stFormSubmitButton"] > button {
-    width: 100% !important;
-    min-height: 48px !important;
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    border-radius: 8px !important;
-    padding: 0.6rem 1rem !important;
+    width: 100%;
+    min-height: 46px;
+    padding: 0.65rem 1rem;
+    border: 1px solid #CDD9EA !important;
+    border-radius: 10px !important;
+    background: #FFFFFF;
+    color: #173A66 !important;
+    font-size: 15px !important;
+    font-weight: 650 !important;
+    box-shadow: 0 2px 5px rgba(8, 26, 51, 0.04);
+    transition:
+        transform 150ms ease,
+        box-shadow 150ms ease,
+        border-color 150ms ease,
+        background-color 150ms ease;
 }
-input, textarea, select,
-div[data-baseweb="input"] input,
-div[data-baseweb="select"] div {
-    font-size: 16px !important;
-    min-height: 48px !important;
+
+/* Acciones principales */
+div.stButton > button[kind="primary"],
+div.stDownloadButton > button[kind="primary"],
+div[data-testid="stFormSubmitButton"] > button[kind="primary"],
+button[data-testid="stBaseButton-primary"] {
+    border: 1px solid #155EEF !important;
+    background: linear-gradient(
+        115deg,
+        #123E7C 0%,
+        #155EEF 72%,
+        #2F80ED 100%
+    ) !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 5px 13px rgba(21, 94, 239, 0.19);
 }
+
+div.stButton > button:hover,
+div.stDownloadButton > button:hover,
+div[data-testid="stFormSubmitButton"] > button:hover {
+    border-color: #2F80ED !important;
+    box-shadow: 0 5px 13px rgba(21, 94, 239, 0.12);
+}
+
+div.stButton > button[kind="primary"]:hover,
+button[data-testid="stBaseButton-primary"]:hover {
+    background: linear-gradient(
+        115deg,
+        #123E7C 0%,
+        #155EEF 55%,
+        #398DFF 100%
+    ) !important;
+    box-shadow: 0 7px 17px rgba(21, 94, 239, 0.26);
+}
+
+div.stButton > button:active,
+div.stDownloadButton > button:active {
+    transform: translateY(1px);
+}
+
+/* =========================================================
+   7. CONFIANZA, AVISOS Y ESTADOS
+   ========================================================= */
+
 .badge-conf {
     display: inline-block;
-    padding: 3px 9px;
-    border-radius: 12px;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 4px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    margin-bottom: 5px;
 }
-.badge-verde { background-color: #d1fae5; color: #065f46; border: 1px solid #34d399; }
-.badge-ambar { background-color: #fef3c7; color: #92400e; border: 1px solid #fbbf24; }
-.badge-rojo  { background-color: #fee2e2; color: #991b1b; border: 1px solid #f87171; }
+
+.badge-verde {
+    background: #E8F5ED;
+    color: #176B49;
+    border: 1px solid #B7E1C9;
+}
+
+.badge-ambar {
+    background: #FFF2DB;
+    color: #895414;
+    border: 1px solid #F0D39A;
+}
+
+.badge-rojo {
+    background: #FDECEC;
+    color: #A12D35;
+    border: 1px solid #F3C3C6;
+}
+
 .aviso-fijo {
-    background-color: #eff6ff;
-    border-left: 4px solid #2563eb;
-    padding: 10px 14px;
-    border-radius: 6px;
-    font-size: 15px;
-    margin-bottom: 12px;
-    color: #1e3a8a;
+    background: linear-gradient(110deg, #EDF4FF 0%, #FFFFFF 100%);
+    border: 1px solid #C9DBFA;
+    border-left: 4px solid #2F80ED;
+    padding: 13px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: #18385E;
+}
+
+/* Mensajes nativos de Streamlit */
+[data-testid="stAlert"] {
+    border-radius: 12px !important;
+}
+
+/* =========================================================
+   8. TABLAS Y RESULTADOS
+   ========================================================= */
+
+[data-testid="stDataFrame"],
+[data-testid="stTable"] {
+    border: 1px solid #D8E2F0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+
+[data-testid="stMetric"] {
+    padding: 1rem;
+    border: 1px solid #D8E2F0;
+    border-radius: 12px;
+    background: #FFFFFF;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #64748B !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #123E7C !important;
+    font-weight: 700 !important;
+}
+
+/* Imágenes de previsualización */
+[data-testid="stImage"] img {
+    border-radius: 10px;
+}
+
+/* Separadores más discretos */
+hr {
+    border-color: #E0E8F3 !important;
+}
+
+/* =========================================================
+   9. ACCESIBILIDAD Y DISEÑO RESPONSIVE
+   ========================================================= */
+
+:focus-visible {
+    outline: 3px solid #2F80ED !important;
+    outline-offset: 2px !important;
+}
+
+@media (max-width: 768px) {
+    [data-testid="stMainBlockContainer"],
+    .block-container {
+        padding-top: 1.25rem !important;
+        padding-bottom: 2rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    [data-testid="stTabs"] [data-baseweb="tab-list"] {
+        gap: 3px;
+        padding: 4px;
+        overflow-x: auto;
+        border-radius: 11px;
+    }
+
+    [data-testid="stTabs"] button[role="tab"] {
+        min-height: 44px;
+        padding: 0.55rem 0.75rem;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+
+    [data-testid="stForm"] {
+        padding: 0.75rem;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
 }
 </style>
 """
