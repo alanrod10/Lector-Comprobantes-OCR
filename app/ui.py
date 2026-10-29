@@ -508,6 +508,103 @@ hr {
 }
 
 /* =========================================================
+   ZONA DE CARGA Y CAPTURA DE COMPROBANTES
+   ========================================================= */
+
+[data-testid="stFileUploader"] {
+    margin: 0.5rem 0 1.25rem;
+}
+
+[data-testid="stFileUploader"] section {
+    min-height: 125px;
+    padding: 1rem;
+    border: 1.5px dashed #8BADE0 !important;
+    border-radius: 14px !important;
+    background: linear-gradient(
+        135deg,
+        #EDF4FF 0%,
+        #FFFFFF 75%,
+        #F5F8FF 100%
+    ) !important;
+    transition:
+        border-color 160ms ease,
+        background-color 160ms ease,
+        box-shadow 160ms ease;
+}
+
+[data-testid="stFileUploader"] section:hover {
+    border-color: #2F80ED !important;
+    box-shadow: 0 4px 14px rgba(21, 94, 239, 0.08);
+}
+
+[data-testid="stFileUploader"] button {
+    border: 1px solid #B8CCEC !important;
+    border-radius: 8px !important;
+    background: #FFFFFF !important;
+    color: #123E7C !important;
+    font-weight: 650 !important;
+}
+
+[data-testid="stFileUploader"] button:hover {
+    border-color: #2F80ED !important;
+    background: #F3F7FF !important;
+}
+
+[data-testid="stFileUploader"] small,
+[data-testid="stFileUploader"] [data-testid="stFileUploaderFileName"] {
+    color: #526984 !important;
+}
+
+/* Cámara */
+[data-testid="stCameraInput"] {
+    margin: 0.5rem 0 1.25rem;
+    padding: 1rem;
+    border: 1px solid #D8E2F0;
+    border-radius: 14px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px rgba(15, 39, 75, 0.035);
+}
+
+[data-testid="stCameraInput"] video,
+[data-testid="stCameraInput"] img {
+    border-radius: 10px !important;
+}
+
+/* Acción principal */
+div.stButton > button[kind="primary"],
+button[data-testid="stBaseButton-primary"] {
+    min-height: 50px;
+    border-radius: 11px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.01em;
+}
+
+/* Avisos */
+[data-testid="stAlert"] {
+    border-radius: 12px !important;
+    border-width: 1px;
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    [data-testid="stFileUploader"] section {
+        min-height: 110px;
+        padding: 0.75rem;
+    }
+
+    [data-testid="stCameraInput"] {
+        padding: 0.75rem;
+        border-radius: 12px;
+    }
+
+    div.stButton > button[kind="primary"],
+    button[data-testid="stBaseButton-primary"] {
+        min-height: 48px;
+    }
+}
+
+/* =========================================================
    9. ACCESIBILIDAD Y DISEÑO RESPONSIVE
    ========================================================= */
 
