@@ -75,7 +75,100 @@ MOBILE_CSS = """
     background: #F3F6FC;
     color: #12233F;
 }
+/* =========================================================
+   ENCABEZADO PRINCIPAL — IDENTIDAD VISUAL
+   ========================================================= */
 
+.hero-header {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    margin: 0 0 1.6rem;
+    padding: clamp(1.5rem, 4vw, 2.75rem);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 22px;
+    background: linear-gradient(
+        118deg,
+        #081A33 0%,
+        #123E7C 43%,
+        #155EEF 76%,
+        #2F80ED 100%
+    );
+    box-shadow: 0 14px 32px rgba(8, 26, 51, 0.18);
+    color: #FFFFFF;
+}
+
+.hero-header::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -90px;
+    right: -55px;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 28px rgba(255, 255, 255, 0.035),
+        0 0 0 58px rgba(255, 255, 255, 0.025);
+    pointer-events: none;
+}
+
+.hero-kicker {
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.10);
+    color: #DCE8FF;
+    font-size: 0.75rem;
+    font-weight: 750;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.hero-title {
+    margin: 1rem 0 0.65rem;
+    color: #FFFFFF !important;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    font-weight: 800;
+    letter-spacing: -0.045em;
+    line-height: 1.1;
+}
+
+.hero-description {
+    max-width: 680px;
+    margin: 0;
+    color: #E5EEFF;
+    font-size: clamp(0.95rem, 1.5vw, 1.08rem);
+    line-height: 1.7;
+}
+
+.hero-accent {
+    color: #FFFFFF;
+    font-weight: 750;
+}
+
+@media (max-width: 768px) {
+    .hero-header {
+        margin-bottom: 1.2rem;
+        padding: 1.35rem;
+        border-radius: 16px;
+    }
+
+    .hero-header::after {
+        top: -105px;
+        right: -145px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 0.94rem;
+    }
+}
 [data-testid="stHeader"] {
     background: transparent;
 }
